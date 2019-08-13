@@ -1,6 +1,6 @@
 console.log("monica isme")
-console.log("nonononno")
+console.log("kdosfkoja]giofe]gjn")
 console.log("yeyeyeyeyeyysssss")
-console.log("monica isme")
+console.log("monica ismdjsfkjriwnbfdnbkdse")
 console.log("nonononno")
 console.log("yeyeyeyeyeyysssss")
