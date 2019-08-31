@@ -1,5 +1,5 @@
-$(document).ready(function(){
-    function showhide(show,hide,hide1){
+$(document).ready(function() {
+    function showhide(show, hide, hide1) {
         $('input').val(null)
         $(show).show();
         $(hide).hide();
@@ -8,12 +8,12 @@ $(document).ready(function(){
     // showhide('.register','.loginpage','.home')
 
 
-    $('.reg-btn').click(function () {
-        showhide('.loginpage','.register','.home')
-    })
-    // $('.login-btn').click(function () {
-    //     showhide('.loginpage','.register','.home','.loginpage','.register')
-        
+    $('.reg-btn').click(function() {
+            showhide('.loginpage', '.register', '.home')
+        })
+        // $('.login-btn').click(function () {
+        //     showhide('.loginpage','.register','.home','.loginpage','.register')
+
     // })
 
 })

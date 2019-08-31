@@ -6,92 +6,174 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>LoginPage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-    <link rel="stylesheet" href="https://lipis.github.io/bootstrap-social/social.js">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
-        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
-        crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
-        crossorigin="anonymous"></script>\
-        <script src="login.js"></script>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
+    <!-- <link rel="stylesheet" href="https://lipis.github.io/bootstrap-social/social.js"> -->
+    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    </script>
+    <link rel="stylesheet" href="
+    login.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>\ -->
+    <!-- <script src="login.js"></script> -->
+    <script src="loginpage.js"></script>
 </head>
 
 <body>
-    <br>
-    <div class="row register">
+    <!-- Button trigger modal -->
+
+    <div class="container">
+
         <br>
-        <div class="col-md-4"></div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="card-header">Registration Form</div>
-                <div class="card-body">
-                    <div class="form-group">
-                        <label for="fname" class="bmd-label-floating">Firstname</label>
-                        <input type="text" class="form-control" id="fname">
-                    </div>
-                    <div class="form-group">
-                        <label for="lname" class="bmd-label-floating">Lastname</label>
-                        <input type="text" class="form-control" id="lname">
-                    </div>
-                    <div class="form-group">
-                        <label for="username" class="bmd-label-floating">Username</label>
-                        <input type="text" class="form-control" id="username">
-                    </div>
-                    <div class="form-group">
-                        <label for="pwd" class="bmd-label-floating">Passsword</label>
-                        <input type="password" class="form-control" id="pwd">
-                    </div>
-                    <div class="form-group">
-                        <label for="cnpwd" class="bmd-label-floating">Confrim Password</label>
-                        <input type="password" class="form-control" id="cnpwd">
-                    </div>
-                    <center>
-                        <button type="button" class="btn btn-outline-sucess reg-btn">sign in</button>
-                    </center>
-                </div>
-            </div>
-        </div>
+        <center>
+
+            <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".log-sign">Sigin or Register to Kat-ON</button>
+        </center>
+        <br>
+
 
     </div>
-    <br>
-    <div class="col-md-4"></div>
-    <div class="row loginpage">
-        <div class="col-md-4"></div>
-        <div  class="col-md-4">
-            <div class="container">
-                <div class="card">
-                    <div class="card-header">Login Page</div>
-                    <div class="card-body">
-                        <div class=" form-group">
-                            <label for="uname" class="bmd-label-floating">Username</label>
-                            <input type="text" class="form-control" id="username">
+
+    <!-- Modal -->
+    <div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+
+                <div class="bs-example bs-example-tabs">
+                    <ul id="myTab" class="nav nav-tabs">
+                        <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+                        <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+
+                    </ul>
+                </div>
+                <div class="modal-body">
+                    <div id="myTabContent" class="tab-content">
+
+                        <div class="tab-pane fade active in" id="signin">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <!-- Sign In Form -->
+                                    <!-- Text input-->
+
+                                    <div class="group">
+                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Email address</label></div>
+
+
+                                    <!-- Password input-->
+                                    <div class="group">
+                                        <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Password</label>
+                                    </div>
+                                    <em>minimum 6 characters</em>
+
+                                    <div class="forgot-link">
+                                        <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+                                    </div>
+
+
+                                    <!-- Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="signin"></label>
+                                        <div class="controls">
+                                            <button id="signin" name="signin" class="btn btn-primary btn-block">Log In</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
-                        <div class="form-group">
-                            <label for="pwd" class="bmd-label-floating">Password</label>
-                            <input type="text" class="form-control" id="password">
+
+
+                        <div class="tab-pane fade" id="signup">
+                            <form class="form-horizontal">
+                                <fieldset>
+                                    <!-- Sign Up Form -->
+                                    <!-- Text input-->
+                                    <div class="group">
+                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">First Name</label></div>
+
+                                    <!-- Text input-->
+                                    <div class="group">
+                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Last Name</label></div>
+
+                                    <!-- Password input-->
+                                    <div class="group">
+                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Email</label></div>
+
+                                    <!-- Text input-->
+                                    <div class="group">
+                                        <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Password</label></div>
+                                    <em>1-8 Characters</em>
+
+                                    <div class="group2">
+                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date">Country</label></div>
+
+
+
+                                    <!-- Button -->
+                                    <div class="control-group">
+                                        <label class="control-label" for="confirmsignup"></label>
+                                        <div class="controls">
+                                            <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign Up</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
-                        <center>
-                            <button type="button" class="btn btn-outline-success login-btn">Login</button>
-                            <div class="btn btn-google "></div>
-                        </center>
-                        <br>
-                        
                     </div>
                 </div>
+                <!--<div class="modal-footer">
+      <center>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </center>
+      </div>-->
             </div>
         </div>
     </div>
-    <div class="col-md-4"></div>
-    <div class="row home">
-        <center>
-            <h1 class="h3">Welcome to Kat-On Page!!!!!!!!!!!</h1>
-        </center>
+
+
+
+    <!--modal2-->
+
+    <div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal">
+                        <fieldset>
+                            <div class="group">
+                                <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+                                <label class="label" for="date">Email address</label></div>
+
+
+                            <div class="control-group">
+                                <label class="control-label" for="forpassword"></label>
+                                <div class="controls">
+                                    <button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
     </div>
 </body>
+x
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </html>
