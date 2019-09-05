@@ -1,29 +1,26 @@
-// console.log('welcome to nodejs')
 
 
-//  var person = require('./person.js').default
-// // // new person('monica','dinglasa').greet();
-//  new person=person();
 
+var studentinfo= require('./person.js')
+var input = require('readline-sync')
 
-var readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
-
-readline.question(`What's your name? `, (name) => {
-    // console.log(`Hi I'm ${name}!`)
-readline.question(`how old are you? `,(age)=>{
-    // console.log(`Im aleady ${age} years old!`)
-readline.question(`where are you from? `,(address)=>{
-    // console.log(`I came from  ${address}!`)
-readline.question(`Your Classschedules `,(classsched)=>{
-     console.log(`${name} your schedules are ${classsched}`)
-readline.question(`do you want to add a classsched? Please type yes/no! `,function(answer){
-    
-readline.close()
-})
-})
-})
-})
-})
+do {
+  student = new studentinfo();
+  console.log("==studentsinfo== ")
+  student.setname(input.question("name : "))
+  student.setage(input.question("Age : "))
+  student.setaddress(input.question("address: "))
+  student.setidnumber(input.question("idnumber : "))
+  console.log("==Add Course == ")
+  student.addCourse(input.question("CCourse : "), input.question("Year : "))
+  console.log("==Add Schedule==")
+  student.addschedule(input.question("CDay : "), input.question("Time : "))
+  student.addStudent(student);
+  console.log("*student was added!*")
+} while (input.question("exit? : ") != "yes");
+  student.displayinfo();
+  console.log("==Remove Student==")
+if (input.question("Are you sure you want to remove  student: ") == "yes") {
+  student.removedStudent(input.question("What index you want to remove?: "), input.question("Number of students you want to remove: "));
+};
+  student.displayinfo();

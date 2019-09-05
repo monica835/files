@@ -67,7 +67,7 @@
                         <center>
                             <button type="button" class="btn btn-outline-success login-btn">Login</button>
                             <button type="button" class="btn btn-outline-danger cancel">cancel</button>
-                            <div type="button" class="btn btn-google "></div>
+                            <!-- <div type="button" class="btn btn-google "></div> -->
                         </center>
                     </div>
                 </div>
@@ -77,13 +77,6 @@
     <div class="col-md-4"></div>
     <!-- Hompage -->
     </div>
-    <div class="row home">
-        <center>
-            <p class="h3">Welcome To HOME Page!!!</p>
-        </center>
-    </div>
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
@@ -91,8 +84,8 @@
 </body>
 <script>
     $(document).ready(function() {
-        $('body').bootstrapMaterialDesign();
-        showHide(null, ".loginPage", ".home")
+
+        showHide(null, ".loginPage")
         var accounts = []
 
         function showHide(show, hide, hide2) {
@@ -102,7 +95,7 @@
             $(hide2).hide();
         }
         $(".cancel").click(function() {
-            showHide(".register", ".loginPage", ".home")
+            showHide(".register", ".loginPage")
         })
         $(".reg-btn").click(function() {
                 if ($("input").val() == "") {
@@ -115,7 +108,7 @@
                     }
                     accounts.push(account)
                     console.log(accounts)
-                    showHide(".loginPage", ".register", ".home")
+                    showHide(".loginPage", ".register")
                 } else {
                     alert("password is too weak!")
                 }
@@ -129,9 +122,9 @@
                 }
             }
             if (login) {
-                showHide(".home", ".loginPage", ".register")
+                showHide( ".loginPage", ".register")
             } else {
-                alert("login failed!")
+                alert("login failed !")
             }
         })
 
