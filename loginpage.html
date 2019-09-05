@@ -6,19 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>LoginPage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons"> -->
-    <!-- <link rel="stylesheet" href="https://lipis.github.io/bootstrap-social/social.js"> -->
     <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    </script>
     <link rel="stylesheet" href="
     login.css">
-    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous"> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>\ -->
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
     <!-- <script src="login.js"></script> -->
-    <script src="loginpage.js"></script>
+
 </head>
 
 <body>
@@ -28,8 +21,13 @@
 
         <br>
         <center>
-
-            <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".log-sign">Sigin or Register to Kat-ON</button>
+            <div class="header" style="width:100px;height:200px;">
+                <div class=" header-form">
+                    <button class="btn btn-primary btn-lg" href="#signup" data-toggle="modal" data-target=".log-sign">Sigin
+                        or
+                        Register to Kat-ON</button>
+                </div>
+            </div>
         </center>
         <br>
 
@@ -37,13 +35,15 @@
     </div>
 
     <!-- Modal -->
-    <div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
 
                 <div class="bs-example bs-example-tabs">
                     <ul id="myTab" class="nav nav-tabs">
-                        <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+                        <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log
+                                In</a></li>
                         <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
 
                     </ul>
@@ -52,25 +52,28 @@
                     <div id="myTabContent" class="tab-content">
 
                         <div class="tab-pane fade active in" id="signin">
-                            <form class="form-horizontal">
+                            <div class="form-horizontal">
                                 <fieldset>
                                     <!-- Sign In Form -->
                                     <!-- Text input-->
 
                                     <div class="group">
-                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
-                                        <label class="label" for="date">Email address</label></div>
+                                        <input required="" id="email" placeholder="email address" class="input" type="text"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date"></label></div>
 
 
                                     <!-- Password input-->
                                     <div class="group">
-                                        <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
-                                        <label class="label" for="date">Password</label>
+                                        <input required="" id="password" placeholder="password" class="input" type="password"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date"></label>
                                     </div>
                                     <em>minimum 6 characters</em>
 
                                     <div class="forgot-link">
-                                        <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+                                        <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot
+                                            my password</a>
                                     </div>
 
 
@@ -78,54 +81,63 @@
                                     <div class="control-group">
                                         <label class="control-label" for="signin"></label>
                                         <div class="controls">
-                                            <button id="signin" name="signin" class="btn btn-primary btn-block">Log In</button>
+                                            <button id="login" name="signin" class="btn btn-primary btn-block">Log In</button>
                                         </div>
                                     </div>
                                 </fieldset>
-                            </form>
+                            </div>
                         </div>
 
 
                         <div class="tab-pane fade" id="signup">
-                            <form class="form-horizontal">
+                            <div class="form-horizontal">
                                 <fieldset>
                                     <!-- Sign Up Form -->
                                     <!-- Text input-->
                                     <div class="group">
-                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
-                                        <label class="label" for="date">First Name</label></div>
+                                        <input required="" placeholder="firstname" class="input" type="text"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date"></label></div>
 
                                     <!-- Text input-->
                                     <div class="group">
-                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
-                                        <label class="label" for="date">Last Name</label></div>
+                                        <input required="" placeholder="lastname" class="input" type="text"><span class="highlight"></span><span
+                                            class="bar"></span>
+                                        <label class="label" for="date"></label></div>
 
                                     <!-- Password input-->
                                     <div class="group">
-                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
-                                        <label class="label" for="date">Email</label></div>
+                                        <input required="" placeholder="email" class="input" type="text"><span class="highlight"></span><span
+                                            class="bar"></span>
+                                        <label class="label" for="date"></label></div>
 
                                     <!-- Text input-->
                                     <div class="group">
-                                        <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
-                                        <label class="label" for="date">Password</label></div>
+                                        <input required="" placeholder="password" class="input" type="password"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date"></label></div>
                                     <em>1-8 Characters</em>
 
                                     <div class="group2">
-                                        <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
-                                        <label class="label" for="date">Country</label></div>
+                                        <input required="" placeholder="address" class="input" type="text"><span class="highlight"></span><span
+                                            class="bar"></span>
+                                        <label class="label" for="date"></label></div>
 
-
+                                    <div class="group2">
+                                        <input required="" placeholder="birthdate" class="input" type="date"><span
+                                            class="highlight"></span><span class="bar"></span>
+                                        <label class="label" for="date"></label></div>
 
                                     <!-- Button -->
                                     <div class="control-group">
                                         <label class="control-label" for="confirmsignup"></label>
                                         <div class="controls">
-                                            <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign Up</button>
+                                            <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign
+                                                Up</button>
                                         </div>
                                     </div>
                                 </fieldset>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -142,7 +154,8 @@
 
     <!--modal2-->
 
-    <div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
@@ -150,7 +163,7 @@
                     <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
                 </div>
                 <div class="modal-body">
-                    <form class="form-horizontal">
+                    <div class="form-horizontal">
                         <fieldset>
                             <div class="group">
                                 <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
@@ -164,7 +177,7 @@
                                 </div>
                             </div>
                         </fieldset>
-                    </form>
+                    </div>
 
                 </div>
             </div>
@@ -172,8 +185,31 @@
         </div>
     </div>
 </body>
-x
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(document).on("click ", "#login", function () {
+            var email = $('#email').val()
+            var password = $('#password').val()
+
+            var data = {
+                email: email,
+                password: password
+            }
+            $.ajax({
+                url: "login.php",
+                method: "POST",
+                data: data,
+                dataType:"json",
+                success: function (res) {
+                    alert(res)
+                }
+            });
+        })
+    })
+</script>
+
 
 </html>
