@@ -15,9 +15,7 @@
   },
   "dependencies": {
     "arraylist": "^0.1.0",
-    "git": "^0.1.5",
     "prompt": "^1.0.0",
-    "readline-sync": "^1.4.10",
     "vue": "^2.6.10"
   }
 }
